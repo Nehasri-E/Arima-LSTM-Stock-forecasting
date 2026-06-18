@@ -214,7 +214,7 @@ ARIMA-LSTM-Stock-forecasting
 ### Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/Nehasri-E/Arima-LSTM-Stock-forecasting.git>
 ```
 
 ### Install Dependencies

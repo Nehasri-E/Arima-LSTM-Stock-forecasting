@@ -95,6 +95,16 @@ rmse = mean_squared_error(
 print("LSTM MAE :", mae)
 print("LSTM RMSE:", rmse)
 
+pd.DataFrame({
+    "Actual": y_test_actual.flatten(),
+    "LSTM_Prediction": predictions.flatten()
+}).to_csv(
+    "outputs/lstm_predictions.csv",
+    index=False
+)
+
+print("LSTM predictions saved.")
+
 import matplotlib.pyplot as plt
 
 plt.figure(figsize=(12,6))
